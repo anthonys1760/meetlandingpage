@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -10,14 +11,12 @@
   <title>Frontend Mentor | Meet landing page</title>
 
   <style>
-
     :root {
-      --violet:  #855FB1;
+      --violet: #855FB1;
       --grey: #87879D;
       --teal: #4D96A9;
       --light: #D8D8D8;
       --buttonTeal: #8FE3F9;
-
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
@@ -31,9 +30,7 @@
       gap: 20px;
     }
 
-    .box-1 {
-      
-    }
+    .box-1 {}
 
     .image {
       max-width: 100%;
@@ -114,7 +111,38 @@
       padding-bottom: 40px;
     }
 
+    .bottom-section {
+      border-left: 2px solid var(--light);
+      height: 100px;
+      position: absolute;
+      left: 50%;
+    }
+
+    .circle-2 {
+      position: relative;
+      border: 2px solid var(--light);
+      width: 50px;
+      height: 50px;
+      border-radius: 40px;
+      margin: 0 auto;
+      top: 100px;
+    }
+
+    .footer {
+      background: url('assets/desktop/image-footer.jpg');
+      border: 2px solid black;
+      max-width: 100%;
+      height: 200px;
+    }
+
+    #footer-image {
+     
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   </style>
+
 </head>
 
 <body>
@@ -139,14 +167,19 @@
     <div class="">
       <h1 class="group-chat">Group Chat <br> for Everyone</h1>
       <br>
-      <p id="text">Meet makes it easy to connect with others <br> face-to-face virtually and collaborate across <br> any device.</p>
-      <button id="download-button" type="button" class="btn btn-primary">Download <span style="color: var(--buttonTeal)">v1.3</span></button>
+      <p id="text">Meet makes it easy to connect with others <br> face-to-face virtually and collaborate across <br> any
+        device.</p>
+      <button id="download-button" type="button" class="btn btn-primary">Download <span
+          style="color: var(--buttonTeal)">v1.3</span></button>
       <button id="what-button" type="button" class="btn btn-primary">What is it?</button>
     </div>
 
+    <!-- This is your box with a right-aligned border -->
     <div class="line-circle">
       
     </div>
+
+    <!-- Here is your circle -->
     <div class="line-circle-circle">
       <p id="circle-number" style="padding-top: 11px; font-weight: 900; color: var(--light);">01</p>
     </div>
@@ -162,14 +195,33 @@
 
     <div class="built-section">
       <h3 class="pt-4 pb-4">Built for Modern Use</h3>
-      <h1 style="font-size: 32px; line-height: 36px; font-weight: 900; font-family: Red Hat Display; padding-bottom: 30px;">Smarter meetings, all in one place</h1>
-      <p id="send-messages">Send messages, share files, show your screen, and record your meetings — all in one 
+      <h1
+        style="font-size: 32px; line-height: 36px; font-weight: 900; font-family: Red Hat Display; padding-bottom: 30px;">
+        Smarter meetings, <br> all in one place</h1>
+      <p id="send-messages">Send messages, share files, show your screen, and record your meetings — all in one
         workspace. Control who can join with invite-only team access, data encryption, and <br>data export.</p>
     </div>
 
-    
+    <div class="bottom-section">
+      
+    </div>
+
+    <div class="circle-2">
+      <p style="padding-top: 11px; font-weight: 900; color: var(--light);" id="circle-number-2">02</p>
+    </div>
+
+    <div class="footer">
+      <!-- <img id="footer-image" class="img-fluid" src="assets/desktop/image-footer.jpg"> -->
 
     </div>
+
+    <!-- <div class="footer">
+      <img src="assets/desktop/image-footer.jpg">
+    </div> -->
+
+
+
+  </div>
 
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -177,17 +229,12 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
   </script>
 
-</body>
-
-</html>
-
-<!-- Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-
+  <!--
   02
   Experience more together
   Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+-->
 
-  Download v1.3 -->
 </body>
 
 </html>
