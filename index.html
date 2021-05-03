@@ -44,7 +44,7 @@
 
     .group-chat {
       padding-top: 50px;
-      font-family: Red Hat Display;
+      font-family: 'Red Hat Display', sans-serif;
       font-size: 40px;
       font-style: normal;
       font-weight: 900;
@@ -148,15 +148,15 @@
     }
 
     .footer::after {
-      content:'';
-      position:absolute;
-      left:0;
-      top:0;
-      height:100%;
-      width:100%;
-      background-color:var(--teal);
-      opacity:0.7;
-        }
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--teal);
+      opacity: 0.9;
+    }
 
     #footer-image {
       padding-bottom: 20px;
@@ -165,10 +165,16 @@
     }
 
     .text-style {
+      font-family: 'Red Hat Display', sans-serif;
       padding-top: 100px;
       color: #fff;
       position: relative;
       z-index: 2;
+    }
+
+    #footer-heading {
+      font-weight: 900;
+      font-size: 32px;
     }
 
     #download-button-2 {
@@ -223,27 +229,25 @@
     </div>
 
     <div class="image-grid">
-        <div class="row row-cols-2">
-          <div class="col image-fluid">
-            <img class="mobile-image" src="assets/desktop/image-man-texting.jpg">
-          </div>
-          <div class="col image-fluid">
-            <img class="mobile-image" src="assets/desktop/image-men-in-meeting.jpg">
-          </div>
-          <div class="col image-fluid">
-            <img class="mobile-image" src="assets/desktop/image-woman-in-videocall.jpg">
-          </div>
-          <div class="col image-fluid">
-            <img class="mobile-image" src="assets/desktop/image-women-videochatting.jpg">
-          </div>
+      <div class="row row-cols-2">
+        <div class="col image-fluid">
+          <img class="mobile-image" src="assets/desktop/image-man-texting.jpg">
         </div>
+        <div class="col image-fluid">
+          <img class="mobile-image" src="assets/desktop/image-men-in-meeting.jpg">
+        </div>
+        <div class="col image-fluid">
+          <img class="mobile-image" src="assets/desktop/image-woman-in-videocall.jpg">
+        </div>
+        <div class="col image-fluid">
+          <img class="mobile-image" src="assets/desktop/image-women-videochatting.jpg">
+        </div>
+      </div>
     </div>
 
     <div class="built-section">
       <h3 class="pt-4 pb-4">Built for Modern Use</h3>
-      <h1
-        style="font-size: 32px; line-height: 36px; font-weight: 900; font-family: Red Hat Display; padding-bottom: 30px;">
-        Smarter meetings, <br> all in one place</h1>
+      <h1 style="font-weight: 900; padding-bottom: 30px;">Smarter meetings, <br> all in one place</h1>
       <p id="send-messages">Send messages, share files, show your screen, and record your meetings — all in one
         workspace. Control who can join with invite-only team access, data encryption, and <br>data export.</p>
     </div>
@@ -261,7 +265,8 @@
         <h1 style="font-weight: 900;">Experience more <br> together</h1>
         <br>
         <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-        <button type="button" id="download-button-2" class="btn btn-primary mt-4">Download<span style="color: var(--lighter-violet);"> v1.3</span></button>
+        <button type="button" id="download-button-2" class="btn btn-primary mt-4">Download<span
+            style="color: var(--lighter-violet);"> v1.3</span></button>
       </div>
     </div>
 
